@@ -46,7 +46,7 @@ class ViewController: UIViewController {
     
     func getCurrentWether(cityName: String) {
         //Optional 타입으로 반환되기에 가드문으로 binding
-        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?q=\(cityName)&appid=a457fa32b6446acec5aec7534bab49bc") else { return }
+        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?q=\(cityName)&appid=blabla") else { return }
         //Session Configuraion을 결정하고 Session을 생성(여기선 기본세션으로 결정함.)
         let session = URLSession(configuration: .default)
         //URLSession에서 사용할 Task결정 후 API를 호출할 해당 url넘기고, completion handler 정의.
